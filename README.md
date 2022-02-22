@@ -1,6 +1,5 @@
 # componentesYServiciosAngular
-
-## Iniciando el proyecto
+# Iniciando el proyecto
 
 ### Intro: 
 
@@ -16,6 +15,16 @@
   Dale click aqui para ir a la pagina de las [configuraciones iniciales](https://github.com/angelDariaux/fundamentosAngular/blob/master/README.md)
 
 # Generando componentes 
-### comaando para usar: 
+### Comando para usar: 
 
 `ng g c rutaDondeLoQueremosGuardar/nombreDelcomponente` 
+
+# Para tomar en cuenta:
+
+### Link para tener imagenes random: 
+  https://source.unsplash.com/random
+
+
+### Agregar el FormsModule 
+
+import { FormsModule } from '@angular/forms'; // ! Super importante agregar ese modulo de formularios para evitar errores en el archivo **app.modules.ts**
