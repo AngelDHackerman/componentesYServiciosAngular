@@ -3,10 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ImgComponent } from './components/img/img.component'; // ? Nuevo archivo creago cuando creamos el componente con ng g c components/img
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ImgComponent
   ],
   imports: [
     BrowserModule,

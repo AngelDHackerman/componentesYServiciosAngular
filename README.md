@@ -14,3 +14,8 @@
 ### Ver las configuraciones iniciales en el readMe de fundamentos de Angular 
 
   Dale click aqui para ir a la pagina de las [configuraciones iniciales](https://github.com/angelDariaux/fundamentosAngular/blob/master/README.md)
+
+# Generando componentes 
+### comaando para usar: 
+
+`ng g c rutaDondeLoQueremosGuardar/nombreDelcomponente` 
