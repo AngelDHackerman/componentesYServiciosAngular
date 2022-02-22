@@ -6,7 +6,7 @@
  - Vamos a usar el CLI de Angular para generar componentes de forma automatica, usando el comando: 
     `ng g c nombreDelComponente`. g stands for "generate" and c for "component".
 
-### Dandole start al proyecto: 
+## Dandole start al proyecto: 
 
   `ng new nombreDelProyecto` 
 
