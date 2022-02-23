@@ -1,4 +1,5 @@
 <p>
   <input type="text" [(ngModel)]="imgParent" >
 </p>
-<app-img [img]="imgParent"></app-img> <!-- ! Asi se llama al componente que creamos / y con img="" le mandamos info a uno de los componentes hijos -->
+<app-img (loaded)="onLoaded($event)" [img]="imgParent"></app-img> <!-- ! Asi se llama al componente que creamos / y con img="" le mandamos info a uno de los componentes hijos -->
+<!-- ! (loaded)="onLoaded()" asi es como escuchamos los eventos desde el modulo padre -->
