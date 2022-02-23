@@ -4,12 +4,14 @@ import { FormsModule } from '@angular/forms'; // ! Super importante agregar ese 
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ImgComponent } from './components/img/img.component'; // ? Nuevo archivo creago cuando creamos el componente con ng g c components/img
+import { ImgComponent } from './components/img/img.component';
+import { ProductComponent } from './components/product/product.component'; // ? Nuevo archivo creago cuando creamos el componente con ng g c components/img
 
 @NgModule({
   declarations: [
     AppComponent,
-    ImgComponent
+    ImgComponent,
+    ProductComponent
   ],
   imports: [
     BrowserModule,
