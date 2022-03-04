@@ -17,8 +17,8 @@ export class ImgComponent implements OnInit, OnChanges, AfterViewInit, OnDestroy
   @Input() alt: string = '';
   @Output() loaded = new EventEmitter <string> ();
   imageDefault = '../../../assets/notWorking.png';
-  counter = 0;
-  counterFn: number | undefined;
+  /* counter = 0;
+  counterFn: number | undefined; */
 
   constructor() {
     // ? Corre antes del render
@@ -37,10 +37,10 @@ export class ImgComponent implements OnInit, OnChanges, AfterViewInit, OnDestroy
     // ? Corre antes del render
     // ? Podemos correcr cosas async - como los fetch -- one time
     console.log('ngOnInit', 'imgValue => ', this.img)
-    this.counterFn = window.setInterval(() => {
+    /* this.counterFn = window.setInterval(() => {
       this.counter += 1;
       console.log('Run counter');
-    }, 1000)
+    }, 1000) */
   }
 
   ngAfterViewInit() {
@@ -52,7 +52,7 @@ export class ImgComponent implements OnInit, OnChanges, AfterViewInit, OnDestroy
   ngOnDestroy() {
     //  ? corre cuando se elimina un componente
     console.log('ngOnDestroy');
-    window.clearInterval(this.counterFn); // * Asi matamos el proceso que se queda despierto.
+    /* window.clearInterval(this.counterFn); */ // * Asi matamos el proceso que se queda despierto.
   }
 
   imgError () {

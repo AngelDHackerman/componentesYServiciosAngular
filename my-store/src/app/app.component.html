@@ -1,4 +1,4 @@
-<p>
+<!-- <p>
   <input type="text" [(ngModel)]="imgParent" >
 </p>
 
@@ -8,7 +8,7 @@
 <app-img *ngIf="showImg" (loaded)="onLoaded($event)" [img]="imgParent">
 </app-img> <!-- ! Asi se llama al componente que creamos / y con img="" le mandamos info a uno de los componentes hijos -->
 <!-- ! (loaded)="onLoaded()" asi es como escuchamos los eventos desde el modulo padre -->
+<hr>
 
+<app-products></app-products>
 
-<app-product *ngFor="let product of products"></app-product> <!-- ? Asi es como hacemos llamado al componente hijo "product" -->
-<!-- ? products no funciono como esperabamos -->

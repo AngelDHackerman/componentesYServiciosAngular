@@ -5,13 +5,15 @@ import { FormsModule } from '@angular/forms'; // ! Super importante agregar ese 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ImgComponent } from './components/img/img.component'; // ? Nuevo archivo creado cuando creamos el componente con ng g c components/img
-import { ProductComponent } from './components/product/product.component'; // ? Nuevo archivo creado cuando creamos el componente con ng g c components/product
+import { ProductComponent } from './components/product/product.component';
+import { ProductsComponent } from './components/products/products.component'; // ? Nuevo archivo creado cuando creamos el componente con ng g c components/product
 
 @NgModule({
   declarations: [
     AppComponent,
     ImgComponent,
-    ProductComponent
+    ProductComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,
