@@ -9,6 +9,7 @@ import { Product } from './models/product.model'; // ! Asi se importa la interfa
 })
 export class AppComponent {
   imgParent = 'https://source.unsplash.com/random';
+  showImg = true;
 
   products: Product []= [
     {
@@ -45,5 +46,9 @@ export class AppComponent {
 
   onLoaded (img: string) {
     console.log('log del componente padre', img)
+  }
+
+  toggleImg () {
+    this.showImg = !this.showImg;
   }
 }

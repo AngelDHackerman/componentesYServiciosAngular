@@ -1,4 +1,5 @@
 <img width="200" (load)="imgLoaded()" (error)="imgError()" [src]="img" *ngIf="img; else elseImg"><!-- ? (error)="imgError()" es el evento que nos dice si hubo un error al hacer la carga de la imagen. -->
+<h3>Counter: {{ counter }}</h3>
 
 <ng-template #elseImg > <!-- ? Este ng-template es el equivalente a un else en Angular -->
   <img [src]="imageDefault" alt="">
