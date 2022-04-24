@@ -56,7 +56,7 @@ Desde el componente 'principal' debemos agrega la etiqueta del elemento a agrega
 
 `<app-img></app-img>`
 
-## Inputs: 
+## Input, pasarle informacion del componente Padre al Hijo.
 
 ### Pasando informacion desde el app-root al app-img
 
@@ -82,5 +82,6 @@ Desde el componente padre .html :
 <app-img img="Este valor viene desde el componente padre"></app-img> <!-- * alli le cambiamos el valor a img -->
 ```
 
+## Output: pasando informacion del componente Hijo al Padre.
 
-
+`@Output`
