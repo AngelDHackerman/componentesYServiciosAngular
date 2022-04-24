@@ -29,7 +29,24 @@ ng g c components/img
 
 ### Agregar el FormsModule 
 
-import { FormsModule } from '@angular/forms'; // ! Super importante agregar ese modulo de formularios para evitar errores en el archivo **app.modules.ts**
+`import { FormsModule } from '@angular/forms';` 
+<!-- ! Super importante agregar ese modulo de formularios para evitar errores en el archivo **app.modules.ts** -->
+
+
+Tambien agregalo en el decorador de @ngModel, siempre en el mismo documento
+
+```
+@NgModule({
+  declarations: [
+    AppComponent,
+    ImgComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule <!-- ! Aqui hay que declaralo -->
+  ],
+```
 
 ## Llamando los componentes generados desde otro componente: 
 
@@ -38,3 +55,32 @@ Desde el componente 'principal' debemos agrega la etiqueta del elemento a agrega
 - Ejemplo: 
 
 `<app-img></app-img>`
+
+## Inputs: 
+
+### Pasando informacion desde el app-root al app-img
+
+Desde el .ts del componente hijo se agrega:
+
+```
+import { Component, OnInit, Input } from '@angular/core'; <!-- * Agregamos el Input -->
+
+@Component({
+  selector: 'app-img',
+  templateUrl: './img.component.html',
+  styleUrls: ['./img.component.scss']
+})
+export class ImgComponent implements OnInit {
+
+  @Input() img: string = 'valor init';    <!-- * Agregamos el decorador aqui, @Input() -->
+
+```
+
+Desde el componente padre .html :
+
+```
+<app-img img="Este valor viene desde el componente padre"></app-img> <!-- * alli le cambiamos el valor a img -->
+```
+
+
+
