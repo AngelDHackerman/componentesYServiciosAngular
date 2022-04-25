@@ -85,3 +85,16 @@ Desde el componente padre .html :
 ## Output: pasando informacion del componente Hijo al Padre.
 
 `@Output`
+
+## Ciclo de vida de Angular: 
+
+**Constructor**: cuando se corre una instancia
+
+
+**ngOnChanges**: corre antes y durante en el render, siemrpe que detecte cambios en el Input, está para eso, para detectar los cambios.
+
+
+**ngOnInit**: corre antes pero tiene la condicione que solo correo una vez. Ahi se corren eventos asincronos.
+
+**ngAfcterViewInit**: corre cuando los hijos de ese componentes se han renderizado.
+NgOnDestroy: Corre cuando se elimina el componente.
