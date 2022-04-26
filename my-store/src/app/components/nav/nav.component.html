@@ -1,6 +1,6 @@
 <div class="show-mobile">
   <div>
-    <button>
+    <button (click)="toggleMenu()">
       <img src="http://placekitten.com/g/200/300" alt="menu">
     </button>
     <a href="">
@@ -9,6 +9,14 @@
     <a href="">
       <img src="http://placekitten.com/g/200/300" alt="logo">
     </a>
+  </div>
+  <div class="side-menu" [class.active]="activeMenu">
+    <button (click)="toggleMenu()">Close</button>
+    <ul>
+      <li><a href="">All</a></li>
+      <li><a href="">Clothes</a></li>
+      <li><a href="">Electronics hola hola</a></li>
+    </ul>
   </div>
 </div>
 <div class="hide-mobile">
